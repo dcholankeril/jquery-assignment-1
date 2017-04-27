@@ -1,6 +1,4 @@
 // Do your work in this file.
-// Do your work in this file.
-
 
 // 3. Create a `div` element with a class name of "**view**" and append it to the document `body` using jQuery. You can use [append], [appendTo], or any other jQuery method.
 
@@ -20,8 +18,13 @@ $('.view').append('<div class="sun"></div>');
 
 var t = 1;
 while (t < 6) {
-    var divRay = document.createElement("div");
-    divRay.className = "ray-" + t;
-    divSun.appendChild(divRay);
-    t++;
+    $("<div>").addClass("ray-" + i).appendTo(".sun")
 }
+
+// 7. Create a `div` element with a class name of "**mountain**" and append it to the previously created "view" div from step 3.
+
+$('.view').append('<div class="mountain"></div>');
+
+// 1. Create a `div` element with a class name of "**mountain-top**" and append it to the previously created "mountain" div from step 7.
+
+$('.mountain').append('<div class="mountain-top"></div>');
