@@ -28,7 +28,7 @@ $('.mountain').append('<div class="mountain-top"></div>');
 
 var t = 1;
 while (t <= 5) {
-    $("<div>").addClass("ray-" + i).appendTo(".sun")
+    $("<div>").addClass("ray-" + t).appendTo(".sun")
 }
 
 // 9. Write a [`do...while`] loop to create 3 divs. The div classes will be "**mountain-cap-1**", "**mountain-cap-2**", and "**mountain-cap-3**". Append each of these divs to the previously created "mountain-top" div from step 8.
