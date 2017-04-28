@@ -13,13 +13,17 @@ for (var i = 1; i <= 196; i++) {
     }
 }
 
+for (var i = 1; i <= 196; i++) {
+    var boxDiv = document.createElement("div");
+    boxDiv.className = "box";
 
-
-
-$(".box").click(function() {
-    if($(this).hasClass("clicked")) {
-        $(this).removeClass("clicked");
+    if ((i % 2) == 0) {
+        $(boxDiv).addClass("type-1");
     } else {
-        $(this).addClass("clicked");
+        $(boxDiv).addClass("type-2");
     }
-})
+
+    $(boxDiv).appendTo($(document.body));
+}
+
+
