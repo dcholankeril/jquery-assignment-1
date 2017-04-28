@@ -14,22 +14,16 @@ for (var i = 1; i <= 196; i++) {
     $(boxDiv).appendTo($(document.body));
 }
 
+//for (var i = 1; i <= 196; i++) {
 
-$(".box").click(function() {
-    if ( $(this).hasClass("clicked")){
-        $(this).removeClass("clicked");
-    } else {
-         $(this).addClass("clicked");
-    }
+// $(".box").click(function() {
+//     if ( $(this).hasClass("clicked")){
+//         $(this).removeClass("clicked");
+//     } else {
+//          $(this).addClass("clicked");
+//     }
+// });
+
+$('.box').click(function () {
+    $(this).toggleClass('clicked');
 });
-
-$( "box" ).click({
-  click: function() {
-    $( this ).toggleClass( "clicked" );
-  }, mouseenter: function() {
-    $( this ).addClass( "clicked" );
-  }, mouseleave: function() {
-    $( this ).removeClass( "clicked" );
-  }
-});
-
