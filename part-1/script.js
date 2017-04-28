@@ -26,17 +26,24 @@ $('.mountain').append('<div class="mountain-top"></div>');
 
 // 6. Write a [`while`] loop to create 5 divs. The div classes will be "**ray-1**", "**ray-2**", "**ray-3**", "**ray-4**", and "**ray-5**". Append each of these divs to the previously created "sun" div from step 5.
 
-// var t = 1;
-// while (t <= 5) {
-//     $('.sun').append('<div class="ray-"+t></div>')
-// }
+var t = 1;
+while (t < 6) {
+    $('.sun').append('<div class="ray-'+ t +'"></div>');
+    t++;
+}
 
-// // 9. Write a [`do...while`] loop to create 3 divs. The div classes will be "**mountain-cap-1**", "**mountain-cap-2**", and "**mountain-cap-3**". Append each of these divs to the previously created "mountain-top" div from step 8.
+// 9. Write a [`do...while`] loop to create 3 divs. The div classes will be "**mountain-cap-1**", "**mountain-cap-2**", and "**mountain-cap-3**". Append each of these divs to the previously created "mountain-top" div from step 8.
+
+var i = 1;
+do {
+    $('<div></div>').addClass("mountain-cap-" + i).appendTo('.mountain-top');
+    i++;
+} while (i <= 3);
+
+
 
 // var i = 1;
 // do {
-//     $('.mountain').append("mountain-cap-" + i)
+//     $('.mountain-top').append('<div class="mountain-cap-' + i + '"></div>');
+//     i++;
 // } while (i <= 3);
-
-
-
